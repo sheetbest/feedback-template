@@ -12,23 +12,32 @@ A simple feedback form that collects responses directly in Google Sheets using t
 
 ## 🚀 Quick Start
 
-1. **Clone this template**:
-   ```bash
-   git clone https://github.com/sheetbest/feedback-template.git
-   cd feedback-template
-   ```
+### Option 1: Direct Use (No Build Required)
+```bash
+git clone https://github.com/sheetbest/feedback-template.git
+cd feedback-template
+open index.html  # or double-click the file
+```
 
-2. **Open in browser**:
-   ```bash
-   open index.html
-   ```
+### Option 2: Development Server
+```bash
+git clone https://github.com/sheetbest/feedback-template.git
+cd feedback-template
+npm install
+npm start        # Opens browser to localhost:3000
+```
 
-3. **Set up your Google Sheet**:
-   - Create a new Google Sheet
-   - Add columns: `Name`, `Topic`, `Feedback`
-   - Connect via [SheetBest](https://sheetbest.com)
+### Option 3: Development with Auto-Reload
+```bash
+npm run dev      # Serves with cache disabled for development
+```
 
-4. **Update the API endpoint**:
+## 📊 Setup Your Google Sheet
+
+1. Create a new Google Sheet
+2. Add columns: `Name`, `Topic`, `Feedback`  
+3. Connect via [SheetBest](https://sheetbest.com)
+4. Update the API endpoint:
    ```html
    <form data-sheet-best="YOUR_SHEETBEST_API_URL">
    ```
@@ -92,7 +101,6 @@ Open `index.html` in your browser to see the template in action.
 ## 📚 Documentation
 
 - [SheetBest API Documentation](https://docs.sheetbest.com)
-- [Google Sheets API](https://developers.google.com/sheets/api)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
 ## 🤝 Contributing
